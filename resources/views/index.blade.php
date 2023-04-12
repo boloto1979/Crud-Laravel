@@ -267,13 +267,13 @@
         <form action="/crud" method="POST">
           @csrf
           <label for="m-nome">Nome</label>
-          <input id="m-nome" type="text" name="name" value="{{$dado->name}}" required />
+          <input id="m-nome" type="text" name="name"  required />
 
           <label for="m-numero">Descrição</label>
-          <input id="m-numero" type="text" name="description" value="{{$dado->description}}" required />
+          <input id="m-numero" type="text" name="description"  required />
 
           <label for="m-local">Preço</label>
-          <input id="m-local" type="number" name="price" value="{{$dado->price}}" onkeypress="(this,mreais)" required />
+          <input id="m-local" type="number" name="price" onkeypress="(this,mreais)" required />
           <button id="btnSalvar">Salvar</button>
         </form>
       </div>
